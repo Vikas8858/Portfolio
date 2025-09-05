@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Vikas<span class="accent">.</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        VIKAS CHAUHAN<span class="accent">.</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text">MERN Enthusiast</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        "Enthusiastic full-stack developer specializing in MERN stack, 
+                         with a strong focus on clean code, performance optimization, 
+                         and modern web development practices."
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/Vikas.jpg" alt="Vikas Chauhan" class="profile-img">
+                        <div class="image-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                    I am a passionate MERN stack developer with a keen interest in building dynamic and responsive web applications. 
+                    My journey in web development has equipped me with a solid foundation in JavaScript, React, Node.js, and MongoDB. 
+                        I thrive on challenges and enjoy creating efficient, scalable solutions that enhance user experiences.
+                    </p>
+                    <p>
+                             I am dedicated to continuous learning and staying updated with the latest industry trends. 
+                        I believe in the power of collaboration and am always eager to contribute to projects that make a difference.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Cloud & Infrastructure</h3>
+                        <div class="skills-list" id="cloud-skills"></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Automation Tools</h3>
+                        <div class="skills-list" id="dev-skills"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in MERN Stack technologies</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3>MERN Engineer</h3>
+                                <div class="company-info">
+                                    <span class="company">Train With PW Skills</span>
+                                    <span class="duration">Oct 2024 – Present</span>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                <ul class="achievements">
+                                    <li>Proficient in MERN Stack (MongoDB, Express.js, React.js, Node.js) for full-stack web development.</li>
+                                    <li>Hands-on experience in building responsive, single-page applications using React and RESTful APIs.</li>
+                                    <li>Familiar with MongoDB Atlas, Mongoose, and CRUD operations for data management.</li>
+                                    <li>Developed backend services with Node.js and Express.js, including routing, middleware, and API integration.</li>
+                                    <li>Built a full-stack web app using the MERN stack featuring user authentication, dynamic routing, and a responsive UI.</li>
+                                    <li>Mentored 20+ learners on MERN best practices, achieving 95% satisfaction rating based on feedback surveys</li>
+                                </ul>
+                            </div>
+                            <div class="experience-technologies">
+                                <span class="tech-tag">Html5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-list" id="cloud-skills-main"></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-list" id="dev-skills-main">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+
+   <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="./assets/earthquake.png" alt="earthquake">
+                        <div class="project-overlay">
+                            <a href="https://earthquake-analyzer.netlify.app/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://earthquake-analyzer.netlify.app/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Earthquake Analyzer</h3>
+                        <p>React app with live USGS API data visualization & charts.</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Routing</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT8VBUzaGYokgdfv-8237aQYVnm96qXR70A&s", alt="Expense Tracker">
+                        <div class="project-overlay">
+                            <a href="https://expense1-trackers.netlify.app/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://expense1-trackers.netlify.app/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Expense Tracker</h3>
+                        <p>Track daily expenses with charts and analytics using React.js </p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Routing</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg", alt="Recipe ideas">
+                        <div class="project-overlay">
+                            <a href="https://snazzy-gaufre-39cff8.netlify.app/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://snazzy-gaufre-39cff8.netlify.app/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Recipe Ideas</h3>
+                        <p>Built a responsive recipe app to search, explore, and save recipes with category filters and favorites.</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Routing</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg", alt="E-commerce Clone">
+                        <div class="project-overlay">
+                            <a href="https://e-commerce2-application.netlify.app/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://e-commerce2-application.netlify.app/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Clone</h3>
+                        <p>React project implementing all react.js concepts.</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Routing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://tiller.com/wp-content/uploads/2019/05/Tiller-Yearly-Budget.jpg",
+ alt="Dental Clone">
+                        <div class="project-overlay">
+                            <a href="" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio</h3>
+                        <p>A comprehensive Frontend project.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src= "data:image/jpeg;base64,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",
+ alt="Weather App">
+                        <div class="project-overlay">
+                            <a href="https://weather123-application.netlify.app/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://weather123-application.netlify.app/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather-App</h3>
+                        <p>Frontend project implementing frontend technologies.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/da/48/af/da48afa3-238c-bcd7-7d0d-bc71cf6bb9d8/source/256x256bb.jpg",
+ alt="Tic-Tac-Toe Game">
+                        <div class="project-overlay">
+                            <a href="https://vikasticgame.w3spaces.com/" target="_blank" class="project-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://vikasticgame.w3spaces.com/">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Tic-Tac-Toe game implementing react.js technologies.</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Css</span>
+                            <span class="tag">Css</span>
+                        </div>
+                    </div>
+                </div>
+
+     
+
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download my latest resume</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-preview">
+                    <div class="resume-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>React.js Resume</h3>
+                    <p>View my complete professional experience, skills, and achievements in React and Frontend technologies.</p>
+                    <a href="./Resume/Vikas_resume.pdf" download class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new opportunities and connecting with fellow MERN enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vikas-chauhan-146547299/" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Vikas8858" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19C4 20.5 4 16.5 2 16M22 16V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H16C15.4696 21 14.9609 20.7893 14.5858 20.4142C14.2107 20.0391 14 19.5304 14 19V16.5C14 15.5 14.5 15 15 15H20C20.5304 15 21.0391 15.2107 21.4142 15.5858C21.7893 15.9609 22 16.4696 22 17V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <!-- <a href="https://x.com/Amitabh_DevOps" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                            </svg>
+                            Twitter
+                        </a> -->
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon points="22,2 15,22 11,13 2,9 22,2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Vikas Chauhan. All rights reserved.</p>
+                <p>Developed with a love for MERN stack and innovative automation solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dark-default.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
